@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>つーしんらぼ メンバー紹介</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #f4f4f9;
+      color: #000;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin: 2rem 0;
+      color: #000;
+    }
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .toggle-input {
+      display: none;
+    }
+    .toggle-label {
+      padding: 1rem 2rem;
+      border: 2px solid #000;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.3s ease;
+      margin-bottom: 1rem;
+      background-color: #000;
+      color: #fff;
+    }
+    .toggle-label:hover {
+      opacity: 0.8;
+    }
+    .card {
+      background-color: #fff;
+      color: #000;
+      border-radius: 20px;
+      padding: 2rem;
+      width: 90%;
+      max-width: 800px;
+      display: none;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+      transition: all 0.3s ease;
+    }
+    .toggle-input:checked + .toggle-label + .card {
+      display: flex;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #000;
+    }
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 1;
+    }
+    .name-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .label-line {
+      font-size: 0.95rem;
+      margin-bottom: 0.3rem;
+      line-height: 1.4;
+    }
+    @media (max-width: 640px) {
+      .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .info {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>つーしんらぼ メンバー紹介</h1>
+  <div class="card-container">
+
+    <!-- 1: 伊福 -->
+    <input type="checkbox" id="toggle-ifu" class="toggle-input" />
+    <label for="toggle-ifu" class="toggle-label">代表：伊福</label>
+    <div class="card" style="border: 5px solid #000;">
+      <img class="profile-img" src="https://i.imgur.com/r9w8kbL.jpg" alt="伊福の画像" />
+      <div class="info">
+        <div class="name-title">伊福（高校二年生 / つーしんらぼ代表）</div>
+        <div class="label-line">好きなもの：辛い食べ物</div>
+        <div class="label-line">趣味：筋トレ、ランニング、深夜散歩</div>
+        <div class="label-line">好きなキャラクター：くまのプーさん、働く細胞の白血球さん</div>
+        <div class="label-line">夢：自身の経験をもとに困っている人を助けたい</div>
+        <div class="label-line">通信制高校のいいところ：いろんな人とかかわることができる</div>
+        <div class="label-line">みんなにひとこと：「つらい時ほど深呼吸」</div>
+      </div>
+    </div>
+    <!-- 2: あっつ〜 -->
+    <input type="checkbox" id="toggle-atsu" class="toggle-input" />
+    <label for="toggle-atsu" class="toggle-label">副代表：あっつ〜</label>
+    <div class="card" style="border: 5px solid green;">
+      <img class="profile-img" src="https://i.imgur.com/WCute0K.jpg" alt="あっつ〜の画像" />
+      <div class="info">
+        <div class="name-title">あっつ〜（高校三年生 / つーしんらぼ副代表）</div>
+        <div class="label-line">好きなもの：Mrs. GREEN APPLE</div>
+        <div class="label-line">趣味：楽器演奏</div>
+        <div class="label-line">好きなキャラクター：スイミー</div>
+        <div class="label-line">夢：数学教師</div>
+        <div class="label-line">通信制高校のいいところ：自分の時間が作れる</div>
+        <div class="label-line">みんなにひとこと：「自分が楽しいと思える場所を探そう！」</div>
+      </div>
+    </div>
+
+    <!-- 3: いちご -->
+    <input type="checkbox" id="toggle-ichigo" class="toggle-input" />
+    <label for="toggle-ichigo" class="toggle-label">プログラマー：いちご</label>
+    <div class="card" style="border: 5px solid deeppink;">
+      <img class="profile-img" src="https://i.imgur.com/R6y4rl1.jpg" alt="いちごの画像" />
+      <div class="info">
+        <div class="name-title">いちご（高校二年生 / つーしんらぼプログラマー）</div>
+        <div class="label-line">好きなもの：マイメロのぬいぐるみ</div>
+        <div class="label-line">趣味：競技クイズ、数学、プログラミング、服屋巡り</div>
+        <div class="label-line">好きなキャラクター：マイメロディとクロミ</div>
+        <div class="label-line">夢：プログラマー</div>
+        <div class="label-line">通信制高校のいいところ：自由に使える時間が多いため自分の好きなことに熱中できる</div>
+        <div class="label-line">みんなにひとこと：「三度のおやつよりクイズが好きです！」</div>
+      </div>
+    </div>
+
+    <!-- 4: ウラちゃん -->
+    <input type="checkbox" id="toggle-ura" class="toggle-input" />
+    <label for="toggle-ura" class="toggle-label">SNS担当：ウラちゃん</label>
+    <div class="card" style="border: 5px solid blue;">
+      <img class="profile-img" src="https://i.imgur.com/7hwap8X.jpg" alt="ウラちゃんの画像" />
+      <div class="info">
+        <div class="name-title">ウラちゃん（高校三年生 / SNS担当）</div>
+        <div class="label-line">好きなもの：たこ焼き、星街すいせい</div>
+        <div class="label-line">趣味：釣り、バスケ、ポケモンのゲーム</div>
+        <div class="label-line">好きなキャラクター：ジャローダ（ポケモン）</div>
+        <div class="label-line">夢：日本で環境保全と工業の発展の両立を手助けすること</div>
+        <div class="label-line">通信制高校のいいところ：朝が苦手でも昼からの活動が可能なところ</div>
+        <div class="label-line">みんなにひとこと：「意外となんとかなります」</div>
+      </div>
+    </div>
+
+    <!-- 5: うさちゃん -->
+    <input type="checkbox" id="toggle-usa" class="toggle-input" />
+    <label for="toggle-usa" class="toggle-label">書記：うさちゃん</label>
+    <div class="card" style="border: 5px solid coral;">
+      <img class="profile-img" src="https://i.imgur.com/cGtIKDU.jpg" alt="うさちゃんの画像" />
+      <div class="info">
+        <div class="name-title">うさちゃん（高校三年生 / 書記・ブログ担当）</div>
+        <div class="label-line">好きなもの：可愛いコスメ！</div>
+        <div class="label-line">趣味：推し活</div>
+        <div class="label-line">好きなキャラクター：キュアマリン（ハートキャッチプリキュア）</div>
+        <div class="label-line">夢：教師</div>
+        <div class="label-line">通信制高校のいいところ：悩みに共感してくれる人が多い</div>
+        <div class="label-line">みんなにひとこと：「一度きりの人生一緒に彩りましょう」</div>
+      </div>
+    </div>
+
+<!-- 次のメッセージで 6～10人 + 未定 を続けて貼ります！ -->    <!-- 2: あっつ〜 -->
+    <input type="checkbox" id="toggle-atsu" class="toggle-input" />
+    <label for="toggle-atsu" class="toggle-label">副代表：あっつ〜</label>
+    <div class="card" style="border: 5px solid green;">
+      <img class="profile-img" src="https://i.imgur.com/WCute0K.jpg" alt="あっつ〜の画像" />
+      <div class="info">
+        <div class="name-title">あっつ〜（高校三年生 / つーしんらぼ副代表）</div>
+        <div class="label-line">好きなもの：Mrs. GREEN APPLE</div>
+        <div class="label-line">趣味：楽器演奏</div>
+        <div class="label-line">好きなキャラクター：スイミー</div>
+        <div class="label-line">夢：数学教師</div>
+        <div class="label-line">通信制高校のいいところ：自分の時間が作れる</div>
+        <div class="label-line">みんなにひとこと：「自分が楽しいと思える場所を探そう！」</div>
+      </div>
+    </div>
+
+    <!-- 3: いちご -->
+    <input type="checkbox" id="toggle-ichigo" class="toggle-input" />
+    <label for="toggle-ichigo" class="toggle-label">プログラマー：いちご</label>
+    <div class="card" style="border: 5px solid deeppink;">
+      <img class="profile-img" src="https://i.imgur.com/R6y4rl1.jpg" alt="いちごの画像" />
+      <div class="info">
+        <div class="name-title">いちご（高校二年生 / つーしんらぼプログラマー）</div>
+        <div class="label-line">好きなもの：マイメロのぬいぐるみ</div>
+        <div class="label-line">趣味：競技クイズ、数学、プログラミング、服屋巡り</div>
+        <div class="label-line">好きなキャラクター：マイメロディとクロミ</div>
+        <div class="label-line">夢：プログラマー</div>
+        <div class="label-line">通信制高校のいいところ：自由に使える時間が多いため自分の好きなことに熱中できる</div>
+        <div class="label-line">みんなにひとこと：「三度のおやつよりクイズが好きです！」</div>
+      </div>
+    </div>
+
+    <!-- 4: ウラちゃん -->
+    <input type="checkbox" id="toggle-ura" class="toggle-input" />
+    <label for="toggle-ura" class="toggle-label">SNS担当：ウラちゃん</label>
+    <div class="card" style="border: 5px solid blue;">
+      <img class="profile-img" src="https://i.imgur.com/7hwap8X.jpg" alt="ウラちゃんの画像" />
+      <div class="info">
+        <div class="name-title">ウラちゃん（高校三年生 / SNS担当）</div>
+        <div class="label-line">好きなもの：たこ焼き、星街すいせい</div>
+        <div class="label-line">趣味：釣り、バスケ、ポケモンのゲーム</div>
+        <div class="label-line">好きなキャラクター：ジャローダ（ポケモン）</div>
+        <div class="label-line">夢：日本で環境保全と工業の発展の両立を手助けすること</div>
+        <div class="label-line">通信制高校のいいところ：朝が苦手でも昼からの活動が可能なところ</div>
+        <div class="label-line">みんなにひとこと：「意外となんとかなります」</div>
+      </div>
+    </div>
+
+    <!-- 5: うさちゃん -->
+    <input type="checkbox" id="toggle-usa" class="toggle-input" />
+    <label for="toggle-usa" class="toggle-label">書記：うさちゃん</label>
+    <div class="card" style="border: 5px solid coral;">
+      <img class="profile-img" src="https://i.imgur.com/cGtIKDU.jpg" alt="うさちゃんの画像" />
+      <div class="info">
+        <div class="name-title">うさちゃん（高校三年生 / 書記・ブログ担当）</div>
+        <div class="label-line">好きなもの：可愛いコスメ！</div>
+        <div class="label-line">趣味：推し活</div>
+        <div class="label-line">好きなキャラクター：キュアマリン（ハートキャッチプリキュア）</div>
+        <div class="label-line">夢：教師</div>
+        <div class="label-line">通信制高校のいいところ：悩みに共感してくれる人が多い</div>
+        <div class="label-line">みんなにひとこと：「一度きりの人生一緒に彩りましょう」</div>
+      </div>
+    </div>
+    <!-- 6: ぼぶちゃん -->
+    <input type="checkbox" id="toggle-bob" class="toggle-input" />
+    <label for="toggle-bob" class="toggle-label">事務：ぼぶちゃん</label>
+    <div class="card" style="border: 5px solid orange;">
+      <img class="profile-img" src="https://i.imgur.com/zxaIx0q.jpg" alt="ぼぶちゃんの画像" />
+      <div class="info">
+        <div class="name-title">ぼぶちゃん（高校二年生 / つーしんらぼ事務・SNS担当）</div>
+        <div class="label-line">好きなもの：乃木坂46</div>
+        <div class="label-line">趣味：カラオケ</div>
+        <div class="label-line">好きなキャラクター：ちいかわのシーサー</div>
+        <div class="label-line">夢：ゆるく楽しく生きること</div>
+        <div class="label-line">通信制高校のいいところ：好きな時間に好きなことができる</div>
+        <div class="label-line">みんなにひとこと：「迷ったら楽しいほうを選んでみよう！」</div>
+      </div>
+    </div>
+
+    <!-- 7: 生々しい三色団子 -->
+    <input type="checkbox" id="toggle-dango" class="toggle-input" />
+    <label for="toggle-dango" class="toggle-label">SNS担当：生々しい三色団子</label>
+    <div class="card" style="border: 5px solid pink;">
+      <img class="profile-img" src="" alt="生々しい三色団子の画像（未定）" />
+      <div class="info">
+        <div class="name-title">生々しい三色団子（高校二年生 / SNS担当）</div>
+        <div class="label-line">趣味：昼寝</div>
+        <div class="label-line">好きなキャラクター：坊（千と千尋の神隠しのネズミ姿）</div>
+        <div class="label-line">夢：小金持ち</div>
+        <div class="label-line">通信制高校のいいところ：自由に時間が使える！</div>
+        <div class="label-line">みんなにひとこと：いっぱいご飯食べよう！</div>
+      </div>
+    </div>
+
+    <!-- 8: 湯 -->
+    <input type="checkbox" id="toggle-yu" class="toggle-input" />
+    <label for="toggle-yu" class="toggle-label">SNS担当：湯</label>
+    <div class="card" style="border: 5px solid skyblue;">
+      <img class="profile-img" src="https://i.imgur.com/WC8bB8V.jpg" alt="湯の画像" />
+      <div class="info">
+        <div class="name-title">湯（高校三年生 / SNS担当）</div>
+        <div class="label-line">好きなもの：カフェラテ</div>
+        <div class="label-line">趣味：映画鑑賞</div>
+        <div class="label-line">好きなキャラクター：ドラえもん</div>
+        <div class="label-line">夢：犬を飼う</div>
+        <div class="label-line">通信制高校のいいところ：自分のペースで勉強を進めることができる</div>
+        <div class="label-line">みんなにひとこと：よろしくお願いします</div>
+      </div>
+    </div>
+
+    <!-- 9: おとそ -->
+    <input type="checkbox" id="toggle-otoso" class="toggle-input" />
+    <label for="toggle-otoso" class="toggle-label">書記・SNS担当：おとそ</label>
+    <div class="card" style="border: 5px solid lightgreen;">
+      <img class="profile-img" src="https://i.imgur.com/KE8vJTe.jpg" alt="おとその画像" />
+      <div class="info">
+        <div class="name-title">おとそ（高校三年生 / 書記・SNS担当）</div>
+        <div class="label-line">好きなもの：うどん、シール（ステッカー）</div>
+        <div class="label-line">趣味：野球観戦、お笑いを見ること</div>
+        <div class="label-line">好きなキャラクター：ミニオン、ベイマックス</div>
+        <div class="label-line">夢：社会科の教員になること</div>
+        <div class="label-line">通信制高校のいいところ：時間がたくさんあるところ</div>
+        <div class="label-line">みんなにひとこと：未定</div>
+      </div>
+    </div>
+
+    <!-- 10: 未定 -->
+    <input type="checkbox" id="toggle-unknown" class="toggle-input" />
+    <label for="toggle-unknown" class="toggle-label">メンバー枠（未定）</label>
+    <div class="card" style="border: 5px solid gray;">
+      <img class="profile-img" src="" alt="未定の画像" />
+      <div class="info">
+        <div class="name-title">？？？（？？ / ???）</div>
+        <div class="label-line">好きなもの：未定</div>
+        <div class="label-line">趣味：未定</div>
+        <div class="label-line">好きなキャラクター：未定</div>
+        <div class="label-line">夢：未定</div>
+        <div class="label-line">通信制高校のいいところ：未定</div>
+        <div class="label-line">みんなにひとこと：未定</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
