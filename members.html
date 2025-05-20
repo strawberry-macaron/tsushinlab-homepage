@@ -6,78 +6,88 @@
   <title>つーしんらぼ メンバー紹介</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: "Helvetica Neue", sans-serif;
-      background-color: #f4f4f9;
-      color: #000;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2rem;
-      margin: 2rem 0;
-      color: #000;
-    }
-    .card-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-    .toggle-input {
-      display: none;
-    }
-    .toggle-label {
-      padding: 1rem 2rem;
-      border: 2px solid #000;
-      border-radius: 12px;
-      font-size: 1rem;
-      cursor: pointer;
-      text-align: center;
-      transition: background-color 0.3s ease;
-      margin-bottom: 1rem;
-      background-color: #000;
-      color: #fff;
-    }
-    .toggle-label:hover {
-      opacity: 0.8;
-    }
-    .card {
-  background-color: #fff;
-  color: #000;
-  border-radius: 20px;
-  padding: 2rem;
-  width: 90%;
-  max-width: 800px;
-  display: none;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 2rem;
-  transition: all 0.3s ease;
-  box-sizing: border-box; /* 追加 */
-}
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #f4f4f9;
+    color: #000;
+  }
 
-@media (max-width: 640px) {
-  .card {
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #000;
+  }
+
+  .card-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+  }
+
+  .toggle-input {
+    display: none;
+  }
+
+  .toggle-label {
+    padding: 1rem 2rem;
+    border: 2px solid #000;
+    border-radius: 12px;
+    font-size: 1rem;
+    cursor: pointer;
     text-align: center;
-    padding: 1.5rem 1rem; /* モバイル用の余白調整 */
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+    background-color: #000;
+    color: #fff;
   }
-  .info {
+
+  .toggle-label:hover {
+    opacity: 0.8;
+  }
+
+  .card {
+    background-color: #fff;
+    color: #000;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    display: none;
+    flex-direction: row;
     align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
   }
-  .name-title {
-    font-size: 1.25rem;
+
+  @media (max-width: 640px) {
+    .card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    .info {
+      align-items: center;
+    }
+
+    .name-title {
+      font-size: 1.25rem;
+    }
+
+    .label-line {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
   }
-  .label-line {
-    font-size: 0.9rem;
-    line-height: 1.6;
-  }
-}
-    </style>
+</style>
+
 </head>
 <body>
   <h1>つーしんらぼ メンバー紹介</h1>
