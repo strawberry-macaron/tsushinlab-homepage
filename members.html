@@ -108,9 +108,13 @@
     }
 
     .name-title {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 0.5rem;
+  font-size: 1.25rem;      /* モバイル用に少し小さめ */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  white-space: normal;     /* テキストの通常折り返しを許可 */
+  word-break: keep-all;    /* 単語途中では折り返さない */
+  line-height: 1.6;        /* 行間にゆとりを持たせて読みやすく */
+  text-align: center;
     }
 
     .label-line {
