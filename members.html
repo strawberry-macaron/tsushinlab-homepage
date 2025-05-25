@@ -123,6 +123,20 @@
       margin-bottom: 0.3rem;
       line-height: 1.4;
     }
+    .ichigo-card {
+  background-image: url("https://imgur.com/PnDFMTF.jpg");
+  background-size: 150px auto;  /* いちごの大きさ調整 */
+  background-repeat: repeat;    /* 繰り返し表示で壁紙風に */
+  background-position: top left;
+  position: relative;
+  overflow: hidden;
+}
+
+　　　.ichigo-card .info {
+  background-color: rgba(255, 255, 255, 0.8);  /* 読みやすい白の背景 */
+  padding: 1rem;
+  border-radius: 12px;
+}
   </style>
 </head>
 <body>
@@ -179,7 +193,7 @@
     <!-- 3: いちご -->
     <input type="checkbox" id="toggle-ichigo" class="toggle-input" />
     <label for="toggle-ichigo" class="toggle-label">プログラマー：いちご</label>
-    <div class="card" style="border: 5px solid deeppink;">
+    <div class="card ichigo-card" style="border: 5px solid deeppink;">
       <img class="profile-img" src="https://i.imgur.com/R6y4rl1.jpg" alt="いちごの画像" />
       <div class="info">
         <div class="name-title">いちご（高校二年生 / つーしんらぼプログラマー）</div>
