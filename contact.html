@@ -13,25 +13,30 @@
       max-width: 600px;
       margin: auto;
     }
+
     h1 {
       text-align: center;
       margin-bottom: 1.5rem;
       color: #ff69b4;
     }
+
     form {
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
+
     label {
       font-weight: bold;
     }
+
     input, textarea, select {
       padding: 0.75rem;
       font-size: 1rem;
       border: 2px solid #ccc;
       border-radius: 8px;
     }
+
     button {
       background-color: #ff69b4;
       color: white;
@@ -41,23 +46,44 @@
       border-radius: 8px;
       cursor: pointer;
     }
+
     button:hover {
       background-color: #ff1493;
+    }
+
+    .back-home {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      background-color: #ffb6c1;
+      color: white;
+      padding: 10px 16px;
+      font-size: 0.95rem;
+      border-radius: 999px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(255, 182, 193, 0.4);
+      z-index: 1000;
     }
   </style>
 </head>
 <body>
 
-  <h1>お問い合わせ</h1>
-  <div style="background-color: #fff8fb; padding: 1rem; border: 1px solid #ffb6c1; border-radius: 8px; margin-bottom: 1.5rem;">
-  <p><strong>お問い合わせの内容に応じて送信先をお選びください</strong></p>
-  <ul style="text-align: left; padding-left: 1.2rem; margin-top: 0.5rem;">
-    <li><strong> 代表への相談・全体の運営に関すること→ 伊福</strong></li>
-    <li><strong> ホームページ等に関する質問、技術的な質問等→ いちごマカロン</strong></li>
-    <li>迷った場合はどちらでも構いません。必要に応じて内部で転送いたします。</li>
-  </ul>
-</div>
+  <!-- ホームに戻るボタン -->
+  <a href="index.html" class="back-home">🏠 ホームへ</a>
 
+  <h1>お問い合わせ</h1>
+
+  <!-- ガイド -->
+  <div style="background-color: #fff8fb; padding: 1rem; border: 1px solid #ffb6c1; border-radius: 8px; margin-bottom: 1.5rem;">
+    <p><strong>お問い合わせの内容に応じて送信先をお選びください</strong></p>
+    <ul style="text-align: left; padding-left: 1.2rem; margin-top: 0.5rem;">
+      <li><strong>代表への相談・全体の運営に関すること → 伊福</strong></li>
+      <li><strong>ホームページ等に関する質問、技術的な質問等 → いちごマカロン</strong></li>
+      <li>迷った場合はどちらでも構いません。必要に応じて内部で転送いたします。</li>
+    </ul>
+  </div>
+
+  <!-- お問い合わせフォーム -->
   <form method="POST" id="contactForm">
     <input type="hidden" name="_captcha" value="false" />
 
@@ -84,7 +110,6 @@
       const form = document.getElementById("contactForm");
       form.setAttribute("action", "https://formsubmit.co/" + email);
     }
-    // 初期値を設定
     window.onload = () => changeRecipient(document.getElementById("recipient").value);
   </script>
 
