@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>つーしんらぼ ブログホーム</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff69b4;
+      margin-bottom: 1rem;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .category-card {
+      background-color: #ffe4ec;
+      border: 2px solid #ffb6c1;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(255, 182, 193, 0.3);
+      transition: transform 0.2s;
+    }
+
+    .category-card:hover {
+      transform: scale(1.05);
+      background-color: #ffd9e5;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .back-home {
+      position: fixed;
+      top: 1rem;
+      left: 1rem;
+      background-color: #ffc0cb;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 8px rgba(255, 182, 193, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back-home">🏠 ホームへ</a>
+  <h1>つーしんらぼ ブログ</h1>
+  <p>ジャンルを選んで記事を読んでね🍓</p>
+
+  <div class="category-grid">
+    <a href="events.html" class="category-card">イベント</a>
+    <a href="schoollife.html" class="category-card">学校生活</a>
+    <a href="interviews.html" class="category-card">メンバーインタビュー</a>
+    <a href="columns.html" class="category-card">コラム</a>
+    <a href="info.html" class="category-card">お知らせ</a>
+  </div>
+
+  <footer>© 2025 つーしんらぼ</footer>
+
+</body>
+</html>
