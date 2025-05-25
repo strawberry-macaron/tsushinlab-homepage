@@ -55,10 +55,11 @@
     }
 
     .header-logo {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
+      width: 60px;
+      height: 60px;
       object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #FF7F7F; /*コーラルピンクの枠 */
     }
 
     .site-title {
@@ -163,13 +164,13 @@
 
 <body>
   <header>
-    <a class="back-button" href="javascript:history.back()">← 戻る</a>
-    <button class="menu-toggle" onclick="toggleSearch()">≡</button>
-    <div class="header-content">
-      <img src="https://strawberry-macaron.github.io/tsushinlab-homepage/e9923513-f81e-4b68-a5e9-11778e0e4998.png" class="header-logo" alt="つーしんらぼ ロゴ" />
-      <span class="site-title">つーしんらぼ</span>
-    </div>
-  </header>
+  <a class="back-button" href="javascript:history.back()">← 戻る</a>
+  <button class="menu-toggle" onclick="toggleSearch()">≡</button>
+  <div class="header-content">
+    <img src="https://i.imgur.com/MkdZLbG.png" class="header-logo" alt="つーしんらぼ ロゴ" />
+    <span class="site-title">つーしんらぼ</span>
+  </div>
+　</header>
 
   <div id="searchArea" class="search-box">
     <input type="text" id="searchInput" placeholder="キーワードで検索..." onkeyup="filterMenu()" />
