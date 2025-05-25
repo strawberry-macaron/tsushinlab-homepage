@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>お問い合わせ</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #ff69b4;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea, select {
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>お問い合わせ</h1>
+
+  <form method="POST" id="contactForm">
+    <input type="hidden" name="_captcha" value="false" />
+
+    <label for="name">お名前</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">メールアドレス</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">メッセージ</label>
+    <textarea id="message" name="message" rows="6" required></textarea>
+
+    <label for="recipient">送信先を選択</label>
+    <select id="recipient" onchange="changeRecipient(this.value)">
+      <option value="ifuku@example.com">代表　伊福</option>
+      <option value="senchuawu2@gmail.com">プログラマー　いちごマカロン</option>
+    </select>
+
+    <button type="submit">送信</button>
+  </form>
+
+  <script>
+    function changeRecipient(email) {
+      const form = document.getElementById("contactForm");
+      form.setAttribute("action", "https://formsubmit.co/" + email);
+    }
+    // 初期値を設定
+    window.onload = () => changeRecipient(document.getElementById("recipient").value);
+  </script>
+
+</body>
+</html>
 
