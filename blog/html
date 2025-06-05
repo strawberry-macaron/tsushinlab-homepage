@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>note風ブログ記事</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.8;
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    h2 {
+      margin-top: 2em;
+    }
+    .date {
+      color: #888;
+      font-size: 0.9em;
+      margin-bottom: 2em;
+    }
+    p, li {
+      margin: 1em 0;
+    }
+    blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 1em;
+      background: #f2f2f2;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .toc {
+      background: #fff;
+      padding: 1em;
+      border: 1px solid #ddd;
+      margin-bottom: 2em;
+    }
+    .toc h2 {
+      margin-top: 0;
+    }
+    .toc ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .toc li {
+      margin-bottom: 0.5em;
+    }
+    .toc a {
+      text-decoration: none;
+      color: #1a73e8;
+    }
+    .tags {
+      margin-top: 2em;
+    }
+    .tag {
+      background: #eee;
+      border-radius: 999px;
+      padding: 0.3em 0.8em;
+      margin-right: 0.5em;
+      font-size: 0.9em;
+    }
+    .footer-notes {
+      font-size: 0.85em;
+      color: #666;
+      border-top: 1px solid #ddd;
+      margin-top: 3em;
+      padding-top: 1em;
+    }
+    .sns-share {
+      margin-top: 2em;
+    }
+    .sns-share a {
+      margin-right: 10px;
+      text-decoration: none;
+      font-size: 1em;
+    }
+    .nav-links {
+      margin-top: 3em;
+    }
+    .nav-links a {
+      color: #1a73e8;
+      text-decoration: none;
+      margin-right: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ブログ１</h1>
+  <div class="date">2025年6月5日</div>
+
+  <!-- 目次 -->
+  <div class="toc">
+    <h2>目次</h2>
+    <ul>
+      <li><a href="#intro">はじめに</a></li>
+      <li><a href="#design">デザインについて</a></li>
+      <li><a href="#tools">便利なツール</a></li>
+      <li><a href="#footnote">脚注と補足</a></li>
+    </ul>
+  </div>
+
+  <h2 id="intro">はじめに</h2>
+  <p>note風の記事ページは、シンプルで読みやすいのが特徴です。</p>
+
+  <blockquote>「情報は見やすく、届けやすく」</blockquote>
+
+  <h2 id="design">デザインについて</h2>
+  <p>背景は淡いグレー、文字は濃いグレーで落ち着いた雰囲気にしています。</p>
+  <img src="https://placehold.jp/800x400.png" alt="デザイン例">
+
+  <h2 id="tools">便利なツール</h2>
+  <p>以下のようなツールを活用すると、執筆が捗ります：</p>
+  <ul>
+    <li>Google Docs</li>
+    <li>Notion</li>
+    <li>Markdownエディタ</li>
+  </ul>
+  <p>おすすめエディタは <a href="https://zenn.dev/">Zenn</a> や <a href="https://qiita.com/">Qiita</a> です。</p>
+
+  <h2 id="footnote">脚注と補足</h2>
+  <p>noteでは脚注もよく使われます。たとえば<sup id="ref1">[1]</sup>こんな感じ。</p>
+
+  <div class="tags">
+    <span class="tag">Web制作</span>
+    <span class="tag">ブログ</span>
+    <span class="tag">デザイン</span>
+  </div>
+
+  <!-- SNSシェアボタン -->
+  <div class="sns-share">
+    <p>この記事をシェアする：</p>
+    <a href="https://twitter.com/intent/tweet?text=note風ブログ記事を公開しました！&url=https://example.com/blog.html" target="_blank">🐦 Twitter/X</a>
+    <a href="https://social-plugins.line.me/lineit/share?url=https://example.com/blog.html" target="_blank">💬 LINE</a>
+  </div>
+
+  <!-- 他ページへのリンク -->
+  <div class="nav-links">
+    <a href="index.html">🏠 トップページへ戻る</a>
+    <a href="https://note.com/">📖 note本家</a>
+  </div>
+
+  <!-- 脚注 -->
+  <div class="footer-notes">
+    <p><strong>脚注:</strong></p>
+    <ol>
+      <li id="ref1">この記事の内容は架空のもので、実在のnoteとは関係ありません。</li>
+    </ol>
+  </div>
+
+</body>
+</html>
