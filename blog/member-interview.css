@@ -88,11 +88,18 @@ p {
   margin-top: 40px;
   text-align: center;
 }
-
 .back-link a {
-  color: #e75480;
-  font-weight: bold;
+  display: inline-block;
+  background-color: #e75480;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
   text-decoration: none;
-  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-link a:hover {
+  background-color: #d74470;
 }
 }
