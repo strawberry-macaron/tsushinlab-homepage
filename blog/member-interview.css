@@ -59,7 +59,6 @@ p {
   border: 1px solid #ccc;
 }
 
-/* 各キャラの色分け */
 .bubble.interviewer {
   background-color: #fff0f5;
   border-color: #f3a6c4;
@@ -75,7 +74,6 @@ p {
   border-color: #c5b3ff;
 }
 
-/* まとめ用ボックス */
 .note {
   margin-top: 30px;
   padding: 15px;
@@ -84,10 +82,14 @@ p {
   border-radius: 8px;
   font-size: 15px;
   line-height: 1.6;
-  .back-link {
+}
+
+/* 🔽 ここが独立していなければならない */
+.back-link {
   margin-top: 40px;
   text-align: center;
 }
+
 .back-link a {
   display: inline-block;
   background-color: #e75480;
@@ -101,5 +103,4 @@ p {
 
 .back-link a:hover {
   background-color: #d74470;
-}
 }
