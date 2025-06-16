@@ -25,10 +25,10 @@
   <a href="blog index.html">← ブログジャンル一覧に戻る</a>
 </div>
   <div class="share-buttons">
-  <a class="twitter" href="https://twitter.com/intent/tweet?text=通信制高校生の一日を読んでね！&url=https://https://strawberry-macaron.github.io/tsushinlab-homepage/blog/interviews.html" target="_blank">
+  <a class="twitter" href="https://twitter.com/intent/tweet?text=通信制高校生の一日を読んでね！&url=https://strawberry-macaron.github.io/tsushinlab-homepage/blog/interviews.html" target="_blank">
     <i class="fab fa-x-twitter"></i> Twitterで共有
   </a>
-  <a class="line" href="https://social-plugins.line.me/lineit/share?url=https://https://strawberry-macaron.github.io/tsushinlab-homepage/blog/interviews.html" target="_blank">
+  <a class="line" href="https://social-plugins.line.me/lineit/share?url=https://strawberry-macaron.github.io/tsushinlab-homepage/blog/interviews.html" target="_blank">
     <i class="fab fa-line"></i> LINEで共有
   </a>
   <button class="copy" onclick="copyURL()">
@@ -38,7 +38,7 @@
 
 <script>
   function copyURL() {
-    const url = "https://https://strawberry-macaron.github.io/tsushinlab-homepage/blog/interviews.html";
+    const url = window.location.href; // 自動取得でより柔軟に
     navigator.clipboard.writeText(url).then(() => {
       alert("URLをコピーしました！");
     });
