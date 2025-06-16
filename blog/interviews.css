@@ -109,10 +109,3 @@ body {
 .share-buttons i {
   font-size: 1em;
 }
-<script>
-  function copyURL(url) {
-    navigator.clipboard.writeText(url).then(() => {
-      alert("URLをコピーしました！");
-    });
-  }
-</script>
