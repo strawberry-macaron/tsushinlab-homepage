@@ -127,6 +127,13 @@
 
   </div>
 </div>
-
+<script>
+  function copyURL() {
+    const url = window.location.href;
+    navigator.clipboard.writeText(url).then(() => {
+      alert("URLをコピーしました！");
+    });
+  }
+</script>
 </body>
 </html>
