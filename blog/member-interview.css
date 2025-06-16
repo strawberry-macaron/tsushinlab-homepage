@@ -84,7 +84,6 @@ p {
   line-height: 1.6;
 }
 
-/* 🔽 ここが独立していなければならない */
 .back-link {
   margin-top: 40px;
   text-align: center;
@@ -103,7 +102,9 @@ p {
 
 .back-link a:hover {
   background-color: #d74470;
-  .share-buttons {
+}
+
+.share-buttons {
   margin-top: 40px;
   text-align: center;
 }
@@ -147,5 +148,4 @@ p {
 
 .share-buttons i {
   font-size: 16px;
-}
 }
