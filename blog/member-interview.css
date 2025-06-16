@@ -149,3 +149,12 @@ p {
 .share-buttons i {
   font-size: 16px;
 }
+@media screen and (max-width: 480px) {
+  .bubble {
+    max-width: 80%;
+  }
+
+  .chat-container {
+    padding: 15px;
+  }
+}
