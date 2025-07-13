@@ -1,55 +1,35 @@
 body {
-  font-family: "Arial", sans-serif;
-  background-color: #fffafc;
-  margin: 0;
-  padding: 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
   line-height: 1.8;
+  margin: 0;
+  padding: 0 1rem;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 header {
-  background-color: #e75480;
+  background-color: #70b3ff;
   color: white;
   padding: 1.5rem;
   text-align: center;
-  border-radius: 10px;
-  margin-bottom: 2rem;
+  border-radius: 0 0 10px 10px;
 }
 
 h1, h2, h3 {
-  color: #e75480;
+  color: #2b4a6e;
 }
 
 main {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 2rem auto;
   background: white;
-  padding: 30px;
+  padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(231, 84, 128, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 section {
   margin-bottom: 2.5rem;
-}
-
-.speaker {
-  font-weight: bold;
-  color: #444;
-}
-
-.link-button {
-  display: inline-block;
-  background-color: #e75480;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.link-button:hover {
-  background-color: #d74470;
 }
 
 ul {
@@ -61,21 +41,103 @@ ul li {
   margin-bottom: 0.5rem;
 }
 
+.speaker {
+  font-weight: bold;
+  color: #3a3a3a;
+}
+
+.link-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #70b3ff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.link-button:hover {
+  background-color: #559de0;
+}
+
+/* 共有ボタンスタイル */
+.share-buttons {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.share-buttons a,
+.share-buttons button {
+  background-color: #ffe4e8;
+  color: #333;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 9999px;
+  font-size: 0.95em;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-weight: bold;
+}
+
+.share-buttons a:hover,
+.share-buttons button:hover {
+  background-color: #ffd0da;
+  transform: scale(1.05);
+}
+
+.share-buttons i {
+  font-size: 1em;
+}
+
+/* 戻るボタン */
+.back-to-blog {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.back-to-blog a {
+  display: inline-block;
+  background-color: #e75480;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-blog a:hover {
+  background-color: #d74470;
+}
+
+/* レスポンシブ対応 */
 @media screen and (max-width: 600px) {
   body {
-    padding: 10px;
+    padding: 0.5rem;
   }
 
   main {
-    padding: 20px;
+    padding: 1.5rem;
   }
 
   h1 {
     font-size: 1.5em;
   }
 
-  .link-button {
+  .link-button,
+  .share-buttons a,
+  .share-buttons button,
+  .back-to-blog a {
     font-size: 0.9em;
-    padding: 8px 16px;
+    padding: 10px 14px;
   }
 }
