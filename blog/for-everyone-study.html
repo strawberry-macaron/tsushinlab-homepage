@@ -4,55 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>不登校支援インタビュー｜For Everyone Study</title>
-  <style>
-    body {
-      font-family: "Helvetica Neue", sans-serif;
-      line-height: 1.8;
-      margin: 0;
-      padding: 0 1rem;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background-color: #70b3ff;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    h1, h2, h3 {
-      color: #2b4a6e;
-    }
-    main {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    }
-    section {
-      margin-bottom: 2rem;
-    }
-    .speaker {
-      font-weight: bold;
-      color: #3a3a3a;
-    }
-    .link-button {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: #70b3ff;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border-radius: 6px;
-      text-decoration: none;
-    }
-  </style>
+  <link rel="stylesheet" href="for-everyone-study.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
     <h1>「不登校支援」とは？<br>新しい“人との関わり”をつくる</h1>
     <p>For Everyone Studyへのインタビュー</p>
   </header>
+
   <main>
     <section>
       <h2>1. For Everyone Studyとは？</h2>
@@ -124,6 +84,46 @@
       <p>For Everyone Studyさんも参加する通信制高校合同説明会の情報はこちら：</p>
       <a class="link-button" href="https://www.stepup-school.net/goudosoudankai/schedule.php" target="_blank">→ 合同説明会ページへ</a>
     </section>
+
+    <section>
+      <h2>SNSで共有する</h2>
+      <div class="share-buttons">
+        <a class="twitter" href="https://twitter.com/intent/tweet?text=不登校支援インタビュー（For Everyone Study）&url=https://strawberry-macaron.github.io/tsushinlab-homepage/blog/for-everyone-study.html" target="_blank">
+          <i class="fab fa-x-twitter"></i> Twitterで共有
+        </a>
+        <a class="line" href="https://social-plugins.line.me/lineit/share?url=https://strawberry-macaron.github.io/tsushinlab-homepage/blog/for-everyone-study.html" target="_blank">
+          <i class="fab fa-line"></i> LINEで共有
+        </a>
+        <button class="copy" onclick="copyURL()">
+          <i class="fas fa-link"></i> URLをコピー
+        </button>
+      </div>
+    </section>
+
+    <section class="back-to-blog">
+      <a href="interviews.html">← 記事一覧に戻る</a>
+    </section>
+
+    <section>
+      <h2>For Everyone StudyさんのSNS</h2>
+      <div class="share-buttons">
+        <a href="https://twitter.com/ForEveryoneStudy" target="_blank" style="background-color:#1da1f2; color:white;">
+          <i class="fab fa-twitter"></i> Twitter
+        </a>
+        <a href="https://instagram.com/ForEveryoneStudy" target="_blank" style="background-color:#e4405f; color:white;">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </div>
+    </section>
   </main>
+
+  <script>
+    function copyURL() {
+      const url = window.location.href;
+      navigator.clipboard.writeText(url).then(() => {
+        alert("URLをコピーしました！");
+      });
+    }
+  </script>
 </body>
 </html>
